@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Elexmedia.css">
+    <title>Loan Calculator - Elexmedia</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Loan Calculator - Elexmedia</h1>
+    </header>
+
+    <section>
+        <form id="loanForm">
+            <label for="employeeID">Employee ID:</label>
+            <input type="text" id="employeeID" name="employeeID" required pattern="^E.{3,}$" title="Employee ID must start with 'E' and have at least 4 characters"><br><br>
+
+            <label for="employeeName">Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required><br><br>
+
+            <label for="employeeAddress">Address:</label>
+            <input type="text" id="employeeAddress" name="employeeAddress" required><br><br>
+
+            <label for="employeeDesignation">Designation:</label>
+            <select id="employeeDesignation" name="employeeDesignation" required>
+                <option value="" disabled selected>Select Designation</option>
+                <option value="developer">Developer</option>
+                <option value="manager">Manager</option>
+                <option value="analyst">Analyst</option>
+            </select><br><br>
+
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+
+            <label for="loanDate">Date of Loan Taken:</label>
+            <input type="date" id="loanDate" name="loanDate" required><br><br>
+
+            <label for="interestRate">Interest Rate:</label>
+            <input type="number" id="interestRate" name="interestRate" required><br><br>
+
+            <label for="maturityDate">Maturity Date:</label>
+            <input type="date" id="maturityDate" name="maturityDate" required><br><br>
+
+            <button type="button" onclick="calculateLoan()">Calculate Loan</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Elexmedia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
