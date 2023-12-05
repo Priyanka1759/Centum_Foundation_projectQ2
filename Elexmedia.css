@@ -1,13 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: Gainsboro;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #3498db;
+    background-color: DodgerBlue; /* Medium Blue */
     color: white;
     padding: 20px;
     text-align: center;
@@ -23,7 +23,7 @@ form {
 }
 
 footer {
-    background-color: #3498db;
+    background-color: DodgerBlue; /* Medium Blue */
     color: white;
     padding: 10px;
     text-align: center;
